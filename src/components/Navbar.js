@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 import logo from '../images/logo.svg';
-import { maxWidthLg, textStyles } from '../abstracts/Mixins';
+import { maxWidthLg } from '../abstracts/Mixins';
 import { Button } from './styledElements/Button';
+import Link from './Link';
 
 const Nav = styled.nav`
   position: fixed;
@@ -26,19 +27,6 @@ const Container = styled.div`
     align-items: center;
     gap: 3rem;
   }
-
-  .nav-link {
-    ${textStyles}
-    font-size: var(--xxs);
-    text-transform: uppercase;
-    color: var(--lightGray);
-    transition: var(--mainTransition);
-
-    &:hover,
-    &:focus {
-      color: var(--black);
-    }
-  }
 `;
 
 const Navbar = () => {
@@ -47,21 +35,9 @@ const Navbar = () => {
       <Container>
         <img src={logo} alt='insure logo' className='nav-logo' />
         <ul className='nav-list'>
-          <li className='nav-item'>
-            <a href='#!' className='nav-link'>
-              How We Work
-            </a>
-          </li>
-          <li className='nav-item'>
-            <a href='#!' className='nav-link'>
-              Blog
-            </a>
-          </li>
-          <li className='nav-item'>
-            <a href='#!' className='nav-link'>
-              Account
-            </a>
-          </li>
+          <Link text={'How We Work'} />
+          <Link text={'Blog'} />
+          <Link text={'Account'} />
           <Button primary>View Plans</Button>
         </ul>
       </Container>
