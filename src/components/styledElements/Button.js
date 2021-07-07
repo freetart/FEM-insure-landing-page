@@ -10,6 +10,7 @@ export const Button = styled.a`
   font-size: var(--xxs);
   transition: var(--mainTransition);
   display: inline-block;
+  z-index: 1;
 
   ${({ primary }) =>
     primary &&
