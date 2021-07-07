@@ -7,15 +7,15 @@ const flexCenter = css`
 `;
 
 const headingStyles = css`
-  font-family: 'Karla', serif;
-  font-weight: 700;
+  font-family: 'DM Serif Display', sans-serif;
+  font-weight: 400;
   letter-spacing: 0.1rem;
   line-height: 1.3;
 `;
 
 const textStyles = css`
-  font-family: 'DM Serif Display', sans-serif;
-  font-weight: 400;
+  font-family: 'Karla', serif;
+  font-weight: 700;
   letter-spacing: 0.1rem;
   line-height: 1.6;
 `;

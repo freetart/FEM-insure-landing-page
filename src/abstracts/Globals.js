@@ -11,6 +11,7 @@ const Globals = createGlobalStyle`
     /* neutral */
     --veryDarkViolet: hsl(270, 9%, 17%);
     --darkGrayishViolet: hsl(273, 4%, 51%);
+    --lightGray: hsl(0, 0%, 50%);
     --veryLightGray: hsl(0, 0%, 98%);
     /* radius */
     --mainRadius: 1rem;
@@ -25,7 +26,7 @@ const Globals = createGlobalStyle`
     --md: 3rem;
     --sm: 2.5rem;
     --xs: 2rem;
-    --xxs: 1.5rem;
+    --xxs: 1.7rem;
   }
 
   *,
