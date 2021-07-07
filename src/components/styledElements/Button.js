@@ -6,16 +6,25 @@ export const Button = styled.a`
   padding: 1rem 2rem;
   text-transform: uppercase;
   cursor: pointer;
-  border: 0.2rem solid var(--black);
   box-shadow: var(--mainShadow);
   font-size: var(--xxs);
   transition: var(--mainTransition);
+  display: inline-block;
 
   ${({ primary }) =>
     primary &&
     css`
       background-color: transparent;
+      border: 0.2rem solid var(--veryDarkViolet);
       color: var(--veryDarkViolet);
+    `}
+
+  ${({ secondary }) =>
+    secondary &&
+    css`
+      background-color: transparent;
+      border: 0.2rem solid var(--white);
+      color: var(--white);
     `}
 
   &:hover,
@@ -23,8 +32,15 @@ export const Button = styled.a`
     ${({ primary }) =>
       primary &&
       css`
-        background-color: var(--black);
+        background-color: var(--veryDarkViolet);
         color: var(--white);
+      `}
+
+    ${({ secondary }) =>
+      secondary &&
+      css`
+        background-color: var(--white);
+        color: var(--veryDarkViolet);
       `}
   }
 `;
