@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 import { headingStyles, maxWidthLg, textStyles } from '../abstracts/Mixins';
 import { Button } from './styledElements/Button';
+import { Underline } from './styledElements/Underline';
+import { HeroTitle } from './styledElements/Title';
 import heroImg from '../images/image-intro-desktop.jpg';
 import bgPatternLeft from '../images/bg-pattern-intro-left-desktop.svg';
 import bgPatternRight from '../images/bg-pattern-intro-right-desktop.svg';
@@ -36,23 +38,6 @@ const Container = styled.div`
   gap: 2rem;
   align-items: center;
 
-  .info {
-    color: var(--white);
-  }
-
-  .underline {
-    height: 0.1rem;
-    margin-bottom: 3rem;
-    width: 30%;
-    background-color: var(--veryLightGray);
-  }
-
-  .hero-heading {
-    ${headingStyles}
-    line-height: 1;
-    font-size: 8rem;
-  }
-
   .hero-lead {
     ${textStyles}
     font-size: var(--xs);
@@ -75,11 +60,11 @@ const Hero = () => {
       <img src={bgPatternRight} className={`bg-pattern bg-pattern-right`} />
       <Container>
         <div className='info'>
-          <div className='underline'></div>
-          <h1 className='hero-heading'>
+          <Underline light></Underline>
+          <HeroTitle>
             Humanizing <br />
             your insurance.
-          </h1>
+          </HeroTitle>
           <p className='hero-lead'>
             Get your life insurance coverage easier and faster. We blend our
             expertise and technology to help you find the plan that’s right for
