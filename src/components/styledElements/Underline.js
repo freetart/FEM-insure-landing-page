@@ -16,5 +16,6 @@ export const Underline = styled.div`
     dark &&
     css`
       background-color: var(--black);
+      width: 15%;
     `}
 `;
