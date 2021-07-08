@@ -8,7 +8,7 @@ import Cta from './components/Cta';
 import Footer from './components/Footer';
 import Tag from './components/Tag';
 
-// TODO: add preloader | add toggle menu | add mobile menu
+// TODO: add toggle menu | add mobile menu
 
 function App() {
   AOS.init({ offset: 100, duration: 1000, once: true });
