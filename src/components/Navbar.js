@@ -3,6 +3,7 @@ import logo from '../images/logo.svg';
 import { maxWidthLg } from '../abstracts/Mixins';
 import { Button } from './styledElements/Button';
 import Link from './Link';
+import Responsive from '../abstracts/Responsive';
 
 const Nav = styled.nav`
   position: fixed;
@@ -26,6 +27,10 @@ const Container = styled.div`
     display: flex;
     align-items: center;
     gap: 3rem;
+
+    ${Responsive.md`
+      display: none; 
+    `}
   }
 `;
 

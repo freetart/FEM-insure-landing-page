@@ -3,6 +3,7 @@ import { BannerTitle } from './styledElements/Title';
 import { Button } from './styledElements/Button';
 import { maxWidthMd } from '../abstracts/Mixins';
 import bgPatternRight from '../images/bg-pattern-intro-right-desktop.svg';
+import Responsive from '../abstracts/Responsive';
 
 const Container = styled.div`
   ${maxWidthMd}
@@ -13,8 +14,14 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 3rem;
   position: relative;
   overflow: hidden;
+
+  ${Responsive.sm`
+    padding: 3rem;
+  `}
 
   .bg-pattern {
     position: absolute;

@@ -10,16 +10,26 @@ import {
 import featureIconOne from '../images/icon-snappy-process.svg';
 import featureIconTwo from '../images/icon-affordable-prices.svg';
 import featureIconThree from '../images/icon-people-first.svg';
+import Responsive from '../abstracts/Responsive';
 
 const Container = styled.div`
   ${maxWidthLg}
-  padding-top: 30rem;
+  padding: 30rem 2rem 0 2rem;
+
+  ${Responsive.md`
+    padding: 10rem 2rem 0 2rem; 
+  `}
 
   .features {
     ${sectionSpacingMd}
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 5rem;
+
+    ${Responsive.md`
+      grid-template-columns: 1fr;
+      text-align: center;
+    `}
   }
 
   .feature {
@@ -30,6 +40,10 @@ const Container = styled.div`
 
   .feature-icon {
     width: 10rem;
+
+    ${Responsive.md`
+      margin: 0 auto;
+    `}
   }
 
   .feature-heading {

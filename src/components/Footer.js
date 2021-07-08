@@ -10,6 +10,7 @@ import { maxWidthLg, sectionSpacingSm } from '../abstracts/Mixins';
 import LinkColumn from './LinkColumn';
 import Link from './Link';
 import bgPattern from '../images/bg-pattern-footer-desktop.svg';
+import Responsive from '../abstracts/Responsive';
 
 const Container = styled.footer`
   background-color: var(--veryLightGray);
@@ -30,6 +31,8 @@ const Container = styled.footer`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 3rem;
   }
 
   .footer-logo {
@@ -59,6 +62,14 @@ const Container = styled.footer`
     grid-template-columns: repeat(4, 1fr);
     gap: 5rem;
     border-top: 0.1rem solid var(--darkGrayishViolet);
+
+    ${Responsive.md`
+      grid-template-columns: repeat(2, 1fr); 
+    `}
+
+    ${Responsive.sm`
+      grid-template-columns: 1fr; 
+    `}
   }
 `;
 
