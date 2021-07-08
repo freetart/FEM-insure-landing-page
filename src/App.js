@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import AOS from 'aos';
 import '../node_modules/aos/dist/aos.css';
 import Globals from './abstracts/Globals';
@@ -11,11 +12,12 @@ import Tag from './components/Tag';
 // TODO: add toggle menu | add mobile menu
 
 function App() {
+  const [isActive, setIsActive] = useState(false);
   AOS.init({ offset: 100, duration: 1000, once: true });
   return (
     <>
       <Globals />
-      <Navbar />
+      <Navbar isActive={isActive} setIsActive={setIsActive} />
       <Hero />
       <main>
         <Features />

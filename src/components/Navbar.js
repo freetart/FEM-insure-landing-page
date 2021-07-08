@@ -3,6 +3,7 @@ import logo from '../images/logo.svg';
 import { maxWidthLg } from '../abstracts/Mixins';
 import { Button } from './styledElements/Button';
 import Link from './Link';
+import MenuToggle from './MenuToggle';
 import Responsive from '../abstracts/Responsive';
 
 const Nav = styled.nav`
@@ -34,7 +35,7 @@ const Container = styled.div`
   }
 `;
 
-const Navbar = () => {
+const Navbar = ({ isActive, setIsActive }) => {
   return (
     <Nav>
       <Container>
@@ -45,6 +46,7 @@ const Navbar = () => {
           <Link text={'Account'} />
           <Button primary>View Plans</Button>
         </ul>
+        <MenuToggle isActive={isActive} setIsActive={setIsActive} />
       </Container>
     </Nav>
   );
