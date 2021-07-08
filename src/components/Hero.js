@@ -112,7 +112,7 @@ const Hero = () => {
         alt=''
       />
       <Container>
-        <div className='info'>
+        <div className='info' data-aos='fade-in'>
           <Underline light></Underline>
           <HeroTitle>
             Humanizing <br />

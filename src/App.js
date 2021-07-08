@@ -1,3 +1,5 @@
+import AOS from 'aos';
+import '../node_modules/aos/dist/aos.css';
 import Globals from './abstracts/Globals';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
@@ -6,9 +8,10 @@ import Cta from './components/Cta';
 import Footer from './components/Footer';
 import Tag from './components/Tag';
 
-// TODO: make responsive | add aos | add preloader | add toggle menu | add mobile menu
+// TODO: add preloader | add toggle menu | add mobile menu
 
 function App() {
+  AOS.init({ offset: 100, duration: 1000, once: true });
   return (
     <>
       <Globals />

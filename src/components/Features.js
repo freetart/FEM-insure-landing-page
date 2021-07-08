@@ -65,7 +65,7 @@ const Features = () => {
         <Underline dark></Underline>
         <SectionTitle>We're different</SectionTitle>
         <div className='features'>
-          <article className='feature'>
+          <article className='feature' data-aos='fade-up'>
             <img
               src={featureIconOne}
               alt='icon of a lighting bolt'
@@ -77,7 +77,7 @@ const Features = () => {
               Don’t get stuck filling in tedious forms.
             </p>
           </article>
-          <article className='feature'>
+          <article className='feature' data-aos='fade-up' data-aos-delay='100'>
             <img
               src={featureIconTwo}
               alt='icon of a dollar sign'
@@ -89,7 +89,7 @@ const Features = () => {
               may be low, but we still offer the best coverage possible.
             </p>
           </article>
-          <article className='feature'>
+          <article className='feature' data-aos='fade-up' data-aos-delay='200'>
             <img
               src={featureIconThree}
               alt='icon of a user'

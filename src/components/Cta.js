@@ -31,7 +31,7 @@ const Container = styled.div`
 
 const Cta = () => {
   return (
-    <section>
+    <section data-aos='fade-in'>
       <Container>
         <img src={bgPatternRight} className='bg-pattern' alt='' />
         <BannerTitle>
