@@ -65,7 +65,7 @@ const Container = styled.footer`
 const Footer = () => {
   return (
     <Container>
-      <img src={bgPattern} className='footer-bg-pattern' />
+      <img src={bgPattern} className='footer-bg-pattern' alt='' />
       <div className='footer-content'>
         <div className='footer-top'>
           <img src={logo} alt='insure logo' className='footer-logo' />

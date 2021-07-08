@@ -26,7 +26,7 @@ const Cta = () => {
   return (
     <section>
       <Container>
-        <img src={bgPatternRight} class='bg-pattern' />
+        <img src={bgPatternRight} className='bg-pattern' alt='' />
         <BannerTitle>
           Find out more <br /> about how we work
         </BannerTitle>

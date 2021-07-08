@@ -51,11 +51,11 @@ const Features = () => {
         <Underline dark></Underline>
         <SectionTitle>We're different</SectionTitle>
         <div className='features'>
-          <article class='feature'>
+          <article className='feature'>
             <img
               src={featureIconOne}
               alt='icon of a lighting bolt'
-              class='feature-icon'
+              className='feature-icon'
             />
             <h4 className='feature-heading'>Snappy Process</h4>
             <p className='feature-desc'>
@@ -63,11 +63,11 @@ const Features = () => {
               Don’t get stuck filling in tedious forms.
             </p>
           </article>
-          <article class='feature'>
+          <article className='feature'>
             <img
               src={featureIconTwo}
               alt='icon of a dollar sign'
-              class='feature-icon'
+              className='feature-icon'
             />
             <h4 className='feature-heading'>Affordable Prices</h4>
             <p className='feature-desc'>
@@ -75,11 +75,11 @@ const Features = () => {
               may be low, but we still offer the best coverage possible.
             </p>
           </article>
-          <article class='feature'>
+          <article className='feature'>
             <img
               src={featureIconThree}
               alt='icon of a user'
-              class='feature-icon'
+              className='feature-icon'
             />
             <h4 className='feature-heading'>People First</h4>
             <p className='feature-desc'>

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { headingStyles, maxWidthLg, textStyles } from '../abstracts/Mixins';
+import { maxWidthLg, textStyles } from '../abstracts/Mixins';
 import { Button } from './styledElements/Button';
 import { Underline } from './styledElements/Underline';
 import { HeroTitle } from './styledElements/Title';
@@ -56,8 +56,16 @@ const Container = styled.div`
 const Hero = () => {
   return (
     <Header>
-      <img src={bgPatternLeft} className={`bg-pattern bg-pattern-left`} />
-      <img src={bgPatternRight} className={`bg-pattern bg-pattern-right`} />
+      <img
+        src={bgPatternLeft}
+        className={`bg-pattern bg-pattern-left`}
+        alt=''
+      />
+      <img
+        src={bgPatternRight}
+        className={`bg-pattern bg-pattern-right`}
+        alt=''
+      />
       <Container>
         <div className='info'>
           <Underline light></Underline>

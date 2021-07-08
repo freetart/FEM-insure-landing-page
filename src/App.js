@@ -6,7 +6,7 @@ import Cta from './components/Cta';
 import Footer from './components/Footer';
 import Tag from './components/Tag';
 
-// TODO: add tag | make responsive | add aos | add preloader | add toggle menu | add mobile menu
+// TODO: make responsive | add aos | add preloader | add toggle menu | add mobile menu
 
 function App() {
   return (
