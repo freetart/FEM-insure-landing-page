@@ -4,6 +4,9 @@ import Hero from './components/Hero';
 import Features from './components/Features';
 import Cta from './components/Cta';
 import Footer from './components/Footer';
+import Tag from './components/Tag';
+
+// TODO: add tag | make responsive | add aos | add preloader | add toggle menu | add mobile menu
 
 function App() {
   return (
@@ -16,6 +19,7 @@ function App() {
         <Cta />
       </main>
       <Footer />
+      <Tag />
     </>
   );
 }
