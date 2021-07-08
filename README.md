@@ -2,6 +2,8 @@
 
 landing page challenge for frontend mentor
 
+site: https://fem-insure-landing-page-challenge.netlify.app/
+
 #### Features
 
 - hamburger menu & mobile menu
