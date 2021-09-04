@@ -16,7 +16,7 @@ site: https://fem-insure-landing-page-challenge.netlify.app/
 - React
 - Styled Components
 
-#### Dependencies
+#### Libraries
 
 - react icons
 - aos.js
